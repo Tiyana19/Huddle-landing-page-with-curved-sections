@@ -1,0 +1,340 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+body {
+  color: hsla(192, 100%, 9%, 0.7);
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h3,
+h4,
+.btn {
+  font-family: "Poppins", sans-serif;
+  color: hsl(192, 100%, 9%);
+}
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 60px;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.3;
+}
+header {
+  padding: 4rem;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.nav-btn {
+  background-color: #fff;
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  padding: 0.5rem 2rem;
+}
+nav img {
+  height: 100%;
+}
+h1 {
+  font-size: 3rem;
+}
+header > img {
+  width: 75%;
+}
+header .head-info p {
+  width: 40%;
+  margin: 1.5rem auto 2rem;
+  font-size: 1rem;
+}
+.head-info .btn {
+  margin-bottom: 5rem;
+}
+header .count {
+  display: flex;
+  justify-content: space-around;
+  margin: 7rem auto;
+}
+.count h2 {
+  font-size: 5rem;
+  color: hsl(192, 100%, 9%);
+}
+.count p {
+  color: hsl(210, 5%, 68%);
+  font-size: 1.3rem;
+}
+.count div {
+  display: flex;
+  flex-direction: column;
+}
+.count img {
+  align-self: flex-start;
+  width: 2.5rem;
+}
+
+.wave-img {
+  background-repeat: no-repeat no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.wave-img-top-1 {
+  background-image: url(./images/bg-section-top-desktop-1.svg);
+}
+.wave-img-bottom-1 {
+  background-image: url(./images/bg-section-bottom-desktop-1.svg);
+  margin-bottom: 5rem;
+}
+.wave-img-top-2 {
+  background-image: url(./images/bg-section-top-desktop-2.svg);
+  margin-top: 5rem;
+}
+.wave-img-bottom-2 {
+  background-image: url(./images/bg-section-bottom-desktop-2.svg);
+}
+.wave-img-footer {
+  background-image: url(./images/bg-footer-top-desktop.svg);
+  height: 200px;
+}
+.testimonials-container {
+  margin: auto;
+  width: 100%;
+}
+.testimonials {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+}
+.testimonials img {
+  object-fit: contain;
+  width: 40%;
+}
+.testimonials div {
+  width: 40%;
+  margin: 10rem;
+}
+.testimonials h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.grow-testimonials {
+  background-color: #f6fbff;
+  padding: 0 4rem;
+}
+.flow-testimonials {
+  flex-direction: row;
+  padding: 0 4rem;
+}
+.user-testimonials {
+  background-color: #f6fbff;
+  padding: 0 4rem;
+}
+.ready-section {
+  text-align: center;
+  margin: 5rem 0;
+}
+.ready-section h4 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 80px;
+  gap: 3rem;
+  color: hsl(207, 100%, 98%);
+}
+.newsletter-box {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.newsletter-box h4 {
+  color: hsl(0, 0%, 77%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.newsletter-box p {
+  width: 50%;
+  margin: 1rem 0;
+}
+.newsletter-box input {
+  padding: 1rem;
+  width: 50%;
+  margin: 1rem 2rem 1rem 0;
+  border-radius: 10px;
+  border: none;
+}
+.newsletter-box .btn {
+  border-radius: 10px;
+}
+.contact {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.contact > img {
+  margin-bottom: 2rem;
+}
+.contact p {
+  margin-bottom: 3rem;
+}
+.phone,
+.email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .social-icon {
+  margin: 2rem auto;
+}
+footer .social-icon svg {
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social-icon svg:nth-child(1) path:hover {
+  fill: #1454cb;
+}
+
+.social-icon svg:nth-child(2) path:hover {
+  fill: #bf1fd4;
+}
+.social-icon svg:nth-child(3) path:hover {
+  fill: hsl(171, 66%, 44%);
+}
+.attribution {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width < 1000px) {
+  header {
+    padding: 1rem;
+  }
+  header nav {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem 8rem;
+  }
+  nav img {
+    width: 8rem;
+  }
+  nav .btn {
+    padding: 0.5rem 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  header .head-info p {
+    width: 90%;
+    margin: 1.5rem auto 2rem;
+    font-size: 0.9rem;
+  }
+  header .count {
+    flex-direction: column;
+    gap: 5rem;
+    margin: 7rem auto;
+  }
+  .count div {
+    width: fit-content;
+    margin: auto;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .testimonials img {
+    object-fit: contain;
+    width: 20rem;
+    display: block;
+  }
+  .wave-img {
+    height: 50px;
+  }
+  .wave-img-top-1 {
+    background-image: url(./images/bg-section-top-mobile-1.svg);
+  }
+  .wave-img-bottom-1 {
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
+    margin-bottom: 5rem;
+  }
+  .wave-img-top-2 {
+    background-image: url(./images/bg-section-top-mobile-2.svg);
+    margin-top: 5rem;
+  }
+  .wave-img-bottom-2 {
+    background-image: url(./images/bg-section-bottom-mobile-2.svg);
+  }
+  .wave-img-footer {
+    background-image: url(./images/bg-footer-top-mobile.svg);
+    height: 4rem;
+  }
+  .testimonials div {
+    width: 100%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+  .testimonials div p {
+    width: 100%;
+    margin: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .newsletter-box {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .newsletter-box p {
+    width: 100%;
+  }
+  .newsletter-box .input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-box input {
+    display: block;
+    width: 100%;
+  }
+  footer .btn {
+    text-align: end;
+    align-self: flex-end;
+  }
+  footer .attribution {
+    text-align: center;
+  }
+}
