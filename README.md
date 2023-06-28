@@ -10,6 +10,7 @@ This is a solution to the [Huddle landing page with curved sections challenge on
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I have learned](#what-i-have-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -26,6 +27,7 @@ Users should be able to:
 
 ![Desktop Size 1440px](images/desktop-screenshot.png)
 ![Mobile Size 375px](images/mobile-screenshot.png)
+![Active State form](images/active-preview.png)
 
 ### Links
 
@@ -40,6 +42,23 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- DOM Manipulation
+
+### What I have learned
+
+- JavaScript
+
+```
+ function emailValidator(email) {
+       let regex =
+         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       return regex.test(String(email).toLowerCase());
+ }
+
+```
+
+this will first turn the `email` into a string then turn every letters into lower case and then with the help of `test method` check every letter of `email` with varible `regex` if the letters in `email` are present in `regex variable` then it will return
+`true`
 
 ### Continued development
 

@@ -16,6 +16,8 @@ body {
   color: hsla(192, 100%, 9%, 0.7);
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h3,
@@ -43,7 +45,7 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10rem;
+  margin-bottom: 18rem;
 }
 .nav-btn {
   background-color: #fff;
@@ -74,7 +76,7 @@ header .count {
   margin: 7rem auto;
 }
 .count h2 {
-  font-size: 5rem;
+  font-size: 7rem;
   color: hsl(192, 100%, 9%);
 }
 .count p {
@@ -159,6 +161,7 @@ header .count {
   margin-bottom: 3rem;
 }
 footer {
+  align-self: flex-end;
   background-color: hsl(192, 100%, 9%);
   padding: 0 5rem;
   display: grid;
@@ -180,12 +183,23 @@ footer {
   width: 50%;
   margin: 1rem 0;
 }
+
 .newsletter-box input {
   padding: 1rem;
   width: 50%;
-  margin: 1rem 2rem 1rem 0;
+  margin: 0rem 2rem 1rem 0;
   border-radius: 10px;
   border: none;
+  font-size: 1rem;
+  letter-spacing: 1.3px;
+}
+.newsletter-box .email-validator {
+  color: hsl(0, 100%, 63%);
+}
+.newsletter-box .input-box .email-correct {
+  color: rgb(127, 235, 64);
+  margin-top: 2rem;
+  margin-bottom: 10px;
 }
 .newsletter-box .btn {
   border-radius: 10px;
@@ -242,7 +256,7 @@ footer .social-icon svg {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    margin: 0 1rem 8rem;
+    margin: 0 1rem 10rem;
   }
   nav img {
     width: 8rem;
@@ -326,6 +340,7 @@ footer .social-icon svg {
     display: flex;
     flex-direction: column;
   }
+
   .input-box input {
     display: block;
     width: 100%;
