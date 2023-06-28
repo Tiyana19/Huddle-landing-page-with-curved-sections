@@ -66,4 +66,4 @@ In this project, I have been struggling with background wave images. SO I will k
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Tiyana19)
+- Frontend Mentor - [@Taruna](https://www.frontendmentor.io/profile/Tiyana19)
